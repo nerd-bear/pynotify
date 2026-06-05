@@ -1,0 +1,5 @@
+detect-da-planes.py
+.vscode/
+yolov8n.pt
+tkinter_pncn_tester.py
+win32_pncn_tester.py
