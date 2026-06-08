@@ -1,26 +1,42 @@
 [project]
 name = "pynotifywin"
-version = "0.0.5"
-authors = [
-  { name="Nerd Bear", email="nerd.bear.dev@gmail.com" },
-]
+version = "0.0.6"
 description = "A library designed for Windows, that allows you to create every type of standard desktop notification you can imagine!"
 readme = "README.md"
 requires-python = ">=3.9"
+
+authors = [
+    { name = "Nerd Bear", email = "nerd.bear.dev@gmail.com" }
+]
+
+license = "MIT"
+
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
     "Operating System :: Microsoft :: Windows",
+    "License :: OSI Approved :: MIT License"
 ]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
+
+dependencies = [
+    "pywin32>=306",
+    "windows-toasts>=1.1.1"
+]
 
 [project.urls]
 Homepage = "https://github.com/nerd-bear/pynotify"
 Issues = "https://github.com/nerd-bear/pynotify/issues"
 
 [build-system]
-requires = ["hatchling >= 1.26"]
+requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.targets.wheel]
+packages = ["pynotify"]
+
 [tool.hatch.build]
-include = ["pynotify.py", "__init__.py", "pynotify/*"]
+include = [
+    "pynotify/**",
+    "README.md",
+    "LICENSE"
+]
