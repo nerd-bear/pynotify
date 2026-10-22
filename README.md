@@ -6,6 +6,6 @@ A library designed for Windows (with planned linux support), that allows you to 
 ![](./img2.png)
 
 
-<h2 cstyle="text-align: center;"><bold>Created by Nerd Bear</bold></h2>
+<h2 align="center"><b>Created by <a href="https://nerdbear.org">Nerd Bear</a></b></h2>
 
 Disclaimer: Even though the code is made by humans, certain docstrings were created by AI VSC extensions.

@@ -24,7 +24,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/nerd-bear/pynotify"
+Homepage = "https://nerdbear.org/projects/pynotify"
+Source = "https://github.com/nerd-bear/pynotify"
 Issues = "https://github.com/nerd-bear/pynotify/issues"
 
 [build-system]
